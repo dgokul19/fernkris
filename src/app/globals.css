@@ -9,21 +9,11 @@
     --foreground: #ededed;
   }
 }
-
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -35,8 +25,12 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+/* Marine theme */
+:root {
+  --marine-ink: #0e1b2e;
+  --marine-deep: #0a2540;
+  --marine-ocean: #0f4c81;
+  --marine-sky: #6fb1ff;
+  --marine-foam: #e6f3ff;
+  --marine-accent: #00c2ff;
 }

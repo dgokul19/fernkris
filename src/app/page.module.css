@@ -139,3 +139,121 @@ a.secondary {
     --button-secondary-border: #1a1a1a;
   }
 }
+
+/* Marine landing styles */
+.hero {
+  position: relative;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 120px 24px 80px;
+  color: #fff;
+  background: radial-gradient(1200px 600px at 50% -20%, rgba(111,177,255,0.35) 0%, rgba(15,76,129,0.05) 60%, transparent 100%),
+    linear-gradient(180deg, #0a2540 0%, #0f4c81 100%);
+}
+
+.heroInner {
+  max-width: 900px;
+}
+
+.title {
+  font-size: clamp(32px, 6vw, 56px);
+  line-height: 1.05;
+  letter-spacing: -1px;
+}
+
+.subtitle {
+  margin-top: 14px;
+  font-size: clamp(16px, 2.4vw, 20px);
+  color: #e6f3ff;
+}
+
+.ctaRow {
+  margin-top: 26px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.wave {
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 90px;
+  pointer-events: none;
+}
+
+.section {
+  padding: 72px 24px;
+}
+
+.sectionInner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.sectionSubtitle {
+  color: #666;
+  margin-bottom: 28px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #ebeff5;
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 6px 20px rgba(15, 76, 129, 0.08);
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.tile {
+  aspect-ratio: 4 / 3;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #6fb1ff, #0f4c81);
+  opacity: 0.9;
+}
+
+.contactForm {
+  display: grid;
+  gap: 12px;
+  max-width: 560px;
+}
+
+.input, .textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d7e2ef;
+  border-radius: 10px;
+  background: #f8fbff;
+}
+
+.textarea { min-height: 120px; resize: vertical; }
+
+@media (max-width: 900px) {
+  .cards, .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 640px) {
+  .cards, .gallery { grid-template-columns: 1fr; }
+  .section { padding: 54px 18px; }
+}
