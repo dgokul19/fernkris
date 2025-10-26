@@ -10,9 +10,7 @@ const Footer = () => {
                         {/* <h1 className="text-white">iSTUDIO</h1> */}
                         <img src="img/logo-img.png" width={120} alt="Logo" />
                     </a>
-                    <p className="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
-                        amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
-                        clita duo justo et tempor</p>
+                    <p className="mb-0">FernKris is a leading shipyard and engineering company based in Singapore. We have been providing comprehensive shipyard and engineering services to the maritime industry for over two decades.</p>
                 </div>
                 <div className="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
                     <h5 className="text-white mb-4">Get In Touch</h5>
@@ -38,7 +36,7 @@ const Footer = () => {
                     <a className="btn btn-link" href="#!">Contact Us</a>
                     <a className="btn btn-link" href="#!">Privacy Policy</a>
                     <a className="btn btn-link" href="#!">Terms & Condition</a>
-                    <a className="btn btn-link" href="#!">Career</a>
+                    {/* <a className="btn btn-link" href="#!">Career</a> */}
                 </div>
                 <div className="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
                     <h5 className="text-white mb-4">Our Services</h5>
@@ -61,8 +59,8 @@ const Footer = () => {
                     <div className="col-md-6 text-center text-md-end">
                         <div className="footer-menu">
                             <a href="#!">Home</a>
-                            <a href="#!">Cookies</a>
-                            <a href="#!">Help</a>
+                            {/* <a href="#!">Cookies</a>
+                            <a href="#!">Help</a> */}
                             <a href="#!">FAQs</a>
                         </div>
                     </div>

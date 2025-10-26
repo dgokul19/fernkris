@@ -1,25 +1,20 @@
 import type { ReactNode } from "react";
 import type { Metadata } from "next";
+import type { Viewport } from 'next'
+
 import Script from 'next/script';
-import { Geist, Geist_Mono } from "next/font/google";
 import "@/app/globals.css";
 
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
-  title: "iSTUDIO - Interior Design Website Template Free",
+  title: "Fern Kris Marine Industry",
   description: "",
-  viewport: "width=device-width, initial-scale=1.0",
   icons: { icon: "/img/favicon.ico" },
+};
+
+// Correct way to define viewport
+export const viewport:Viewport = {
+  width: "device-width",
+  initialScale: 1.0,
 };
 
 export default function RootLayout({
@@ -54,7 +49,7 @@ export default function RootLayout({
 
 
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body>
         {children}
 
         
@@ -62,10 +57,10 @@ export default function RootLayout({
         {/* <!-- JavaScript Libraries --> */}
         <Script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"  strategy="beforeInteractive"></Script >
         <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" strategy="beforeInteractive"></Script >
-        <Script src="/lib/wow/wow.min.js" strategy="afterInteractive"></Script >
-        <Script src="/lib/easing/easing.min.js" strategy="afterInteractive"></Script >
-        <Script src="/lib/waypoints/waypoints.min.js" strategy="afterInteractive"></Script >
-        <Script src="/lib/owlcarousel/owl.carousel.min.js" strategy="afterInteractive"></Script >
+        <Script src="/lib/wow/wow.min.js" strategy="beforeInteractive"></Script >
+        <Script src="/lib/easing/easing.min.js" strategy="beforeInteractive"></Script >
+        <Script src="/lib/waypoints/waypoints.min.js" strategy="beforeInteractive"></Script >
+        <Script src="/lib/owlcarousel/owl.carousel.min.js" strategy="beforeInteractive"></Script >
 
         {/* <!-- Template Javascript --> */}
         <Script src="/js/main.js"  strategy="afterInteractive"></Script >

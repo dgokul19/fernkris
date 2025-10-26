@@ -17,7 +17,7 @@ const BannerComponent = () => {
                 });
             } else {
                 // Retry until plugin attaches
-                setTimeout(initCarousel, 300);
+                setTimeout(initCarousel, 0);
             }
         };
         const updateSize = () => {
