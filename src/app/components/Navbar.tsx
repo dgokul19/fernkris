@@ -31,6 +31,7 @@ const NavbarComponent = () => {
     if(path?.indexOf(idxName || '') > -1){
       return` active`;
     }
+    if(!path && idxName === 'home') return `active`;
     return null;
   };
 
@@ -58,7 +59,7 @@ const NavbarComponent = () => {
                 <a href="/" className={`nav-item nav-link ${getClassNameConditn('home')}`}>Home</a>
                 <a href="/about" className={`nav-item nav-link ${getClassNameConditn('about')}`}>About</a>
                 <a href="/services" className={`nav-item nav-link ${getClassNameConditn('services')}`}>Services</a>
-                <a href="#!" className="nav-item nav-link">Projects</a>
+                <a href="#!"  className={`nav-item nav-link ${getClassNameConditn('projects')}`}>Projects</a>
                 {/* <div className="nav-item dropdown">
                   <a href="#!" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                   <div className="dropdown-menu bg-light mt-2">
@@ -68,7 +69,7 @@ const NavbarComponent = () => {
                     <a href="404.html" className="dropdown-item">404 Page</a>
                   </div>
                 </div> */}
-                <a href="/contact" className="nav-item nav-link">Contact</a>
+                <a href="/contact" className={`nav-item nav-link ${getClassNameConditn('contact')}`}>Contact</a>
               </div>
             </div>
           </nav>
