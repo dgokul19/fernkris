@@ -33,7 +33,7 @@ export default function AboutContentHome() {
                                 </div>
                             </div>
                             <div className="d-flex align-items-center mt-5">
-                                <a className="btn btn-primary px-4 me-2" href="/about.html">Read More</a>
+                                <a className="btn btn-primary px-4 me-2" href="/about">Read More</a>
                                 <a className="btn btn-outline-primary btn-square border-2 me-2" href="#!"><i
                                     className="fab fa-facebook-f"></i></a>
                                 <a className="btn btn-outline-primary btn-square border-2 me-2" href="#!"><i

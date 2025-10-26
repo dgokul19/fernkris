@@ -29,7 +29,7 @@ const ServicesHome = () => {
                             <div className="row g-0">
                                 <div className="col-md-6 wow fadeIn" data-wow-delay="0.2s">
                                     <div className="service-item h-100 d-flex flex-column justify-content-center bg-primary">
-                                        <a href="#!" className="service-img position-relative mb-4">
+                                        <a href="/services" className="service-img position-relative mb-4">
                                             <img className="img-fluid w-100" src="img/service-1.jpg" alt="" />
                                             <h3>Piping & Insulation</h3>
                                         </a>
@@ -39,7 +39,7 @@ const ServicesHome = () => {
                                 </div>
                                 <div className="col-md-6 wow fadeIn" data-wow-delay="0.4s">
                                     <div className="service-item h-100 d-flex flex-column justify-content-center bg-light">
-                                        <a href="#!" className="service-img position-relative mb-4">
+                                        <a href="/services" className="service-img position-relative mb-4">
                                             <img className="img-fluid w-100" src="img/service-2.jpg" alt="" />
                                             <h3>Machine Shop</h3>
                                         </a>
@@ -49,7 +49,7 @@ const ServicesHome = () => {
                                 </div>
                                 <div className="col-md-6 wow fadeIn" data-wow-delay="0.6s">
                                     <div className="service-item h-100 d-flex flex-column justify-content-center bg-light">
-                                        <a href="#!" className="service-img position-relative mb-4">
+                                        <a href="/services" className="service-img position-relative mb-4">
                                             <img className="img-fluid w-100" src="img/service-3.jpg" alt="" />
                                             <h3>Robotic Laser Cladding</h3>
                                         </a>
@@ -59,7 +59,7 @@ const ServicesHome = () => {
                                 </div>
                                 <div className="col-md-6 wow fadeIn" data-wow-delay="0.8s">
                                     <div className="service-item h-100 d-flex flex-column justify-content-center bg-primary">
-                                        <a href="#!" className="service-img position-relative mb-4">
+                                        <a href="/services" className="service-img position-relative mb-4">
                                             <img className="img-fluid w-100" src="img/service-4.jpg" alt="" />
                                             <h3>Engine Overhauling</h3>
                                         </a>
